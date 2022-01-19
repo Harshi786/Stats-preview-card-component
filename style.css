@@ -29,13 +29,13 @@ p {
     line-height: 1.6;
 }
 
-.container {
+main {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
     border-radius: 8px;
-    width:79.1%;
-    height: 446px;
+    max-width:1110px ;
+    width:75%;
     background-color: var(--Darkdesaturatedblue);
 }
 
@@ -45,26 +45,29 @@ p {
     display: inline-block;
 }
 
-#cardtwo {
+.cardtwo {
     border-radius: 0 8px 8px 0;
     position: relative;
 }
 
 .hero {
     width:50%;
-    height: 446px;
     background-color: var(--Softviolet);
     border-radius: 0 8px 8px 0;
 }
 
+.hero .mobile_image {
+    display: none;
+}
+
 .hero .desk_img {
     max-width: 100%;
-    height: auto;
+    height:100%;
     mix-blend-mode: multiply;
     border-radius: 0 8px 8px 0;
     background-repeat: no-repeat;
-    background-size:cover;
     display: block;
+    background-attachment: fixed;
 }
 
 
@@ -102,14 +105,14 @@ p {
         color: var(--White);
         line-height: 25px;
         opacity: 70%;
-        margin: 27px 60px 0px 60px;
+        margin: 29px 70px 0px 60px;
 }
 
 .nums {
-    /* border: 1px solid  yellow; */
     color: var(--White);
     display: flex;
     margin-top: 70px;
+    margin-bottom: 62.5px;
     padding: 10px;
 }
 
@@ -119,7 +122,6 @@ p {
 
 .item h1 {
     font-size: 22px;
-    /* opacity: 90%; */
 }
 
 
@@ -132,51 +134,54 @@ p {
     letter-spacing: 1px;
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:520px) {
 
-.container {
+main {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    width: 260px;;
     height: auto;
 }
 
-#cardtwo {
+.card {
+    width: 100%;
+}
+
+.cardtwo {
     border-radius: 8px 8px 0 0;
 }
 
 
 .hero {
-    width:260px;
-    /* height:auto; */
     background-color: var(--Softviolet);
-    border-radius: 8px 8px 0 0;
     position: relative;
+    border-radius: 8px 8px 0 0;
 }
 
 .hero-overlay {
-    width:260px;
+    border-radius: 8px 8px 0 0;
+}
+
+.hero .mobile_image {
+    max-width: 100%;
+    mix-blend-mode: multiply;
+   border-radius: 8px 8px 0 0;
+    display: block;
 }
 
 .hero .desk_img {
-   display: block;
-   border-radius: 8px 8px 0px 0px;
-}
-
-#cardone {
-    width:260px;
-    height: auto;
+   display: none;
 }
 
 .first_heading { margin:35px 15px 0 15px ;
     text-align: center;
-    font-size: 22px;
+    font-size: 23.5px;
     line-height: 1.3;
 }
 
 .txt {
-    font-size:11.5px;
-    margin:15px 27px;
+    font-size:12px;
+    margin:18px 27px;
     text-align: center;
     line-height: 1.6;
 }
@@ -185,7 +190,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top:35px;
+    margin-top:28px;
 }
 
 .item {
